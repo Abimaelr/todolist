@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abimaelr - toDo List</title>
+   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./Semantic-UI-CSS-master/semantic.min.css">
+    <script src="./Semantic-UI-CSS-master/semantic.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="task-list-app">
+
+        <header>
+            <h1>
+                Minha Lista de Tarefas</header>
+            </h1>
+        <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+        <div class="ui input">
+            <input id="texto-tarefa" type="text" >
+        </div>
+
+        <div class="buttonHead">
+            <div class="ui primary button" id="criar-tarefa">Criar Tarefa!</div>
+            <div class="ui secondary button" id="apaga-tudo">Apaga Tudo!</div>
+        </div>
+
+        <ol id="lista-tarefas">
+        </ol>
+
+        <div class="button-container">
+            <div class="individual">
+                <div class="ui animated fade button" id="remover-finalizados">
+                    <div class="visible content">
+                        Remove Completed
+                    </div>
+                    <div class="hidden content">
+                        <i class="strikethrough icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="individual">
+                <div class="ui animated horizontal button" id="salvar-tarefas">
+                    <div class="visible content">
+                        Save
+                    </div>
+                    <div class="hidden content">
+                        <i class="save icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="individual">
+                <div class="ui animated vertical button" id="mover-cima">
+                    <div class="visible content">
+                        Up!
+                    </div>
+                    <div class="hidden content">
+                        <i class="angle up icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="individual">
+                <div class="ui animated vertical button" id="mover-baixo">
+                    <div class="visible content">
+                        Down!
+                    </div>
+                    <div class="hidden content">
+                        <i class="angle down icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="individual">
+                <div class="ui animated fade button" id="remover-selecionado">
+                    <div class="visible content">
+                        Remove
+                    </div>
+                    <div class="hidden content">
+                        <i class="trash icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
